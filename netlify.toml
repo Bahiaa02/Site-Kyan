@@ -1,5 +1,5 @@
 [[headers]]
-  for = "/videos/*"
+  for = "/*.mp4"
   [headers.values]
     Content-Type = "video/mp4"
     Accept-Ranges = "bytes"
@@ -9,14 +9,3 @@
   for = "/*.html"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
-
-[[redirects]]
-  from = "/rider"
-  to = "/rider.html"
-  status = 200
-
-[[redirects]]
-  from = "/rider.html"
-  to = "/rider.html"
-  status = 200
-  force = true
